@@ -16,7 +16,7 @@ Welcome to the official repository for SwlFT-YOLO. This project presents a novel
 
 At present, this repository contains the following preliminary resources:
 
-Pre-trained Weights: The fully trained model weight files (.pt / .onnx) for SwlFT-YOLO.
+Pre-trained Weights: The fully trained model weight files (.pt) for SwlFT-YOLO.
 
 Training Logs & Curves: The training process visualizations, including loss convergence curves, PR curves, and validation metrics (mAP@50: 75.8%).
 
@@ -44,7 +44,7 @@ Thank you for your interest and patience! Please feel free to ⭐ Star this repo
 
 目前，本代码库已初步开源以下资源：
 
-模型权重文件：SwlFT-YOLO 训练完成的最佳权重文件（包含 .pt 和导出的 .onnx 格式）。
+模型权重文件：SwlFT-YOLO 训练完成的最佳权重文件（包含 .pt）。
 
 训练过程图表：完整的训练过程可视化数据，包括损失函数收敛图、PR曲线以及验证集评估指标（最终 mAP@50 达到 75.8%）。
 
