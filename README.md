@@ -1,12 +1,6 @@
-SwlFT-YOLO 🍃
-
 SwlFT-YOLO: A Frequency-Aware Lightweight Detector for Real-Time Tea Anthracnose Inspection on UAV-based Edge Devices
 
-论文状态 / Paper Status: Under Review
-
-English | 中文版
-
-<h2 id="english">English</h2>
+📌 论文状态 / Paper Status: Under Review
 
 📌 Introduction
 
