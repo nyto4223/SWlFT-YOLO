@@ -10,7 +10,7 @@ English
 
 📌 Introduction
 
-Welcome to the official repository for SwlFT-YOLO. This project presents a novel edge-tailored object detector built upon an inverted "Pruning-then-Tuning" cascade architecture and the Spatial-wavelet learnable Fusion Tuner (SwlFT) attention mechanism. It is designed to achieve highly accurate, low-latency, and real-time detection of early-stage tea anthracnose on UAV-based edge devices (e.g., NVIDIA Jetson Nano).
+Welcome to the official repository for SwlFT-YOLO. This project presents a novel edge-tailored object detector built upon an inverted FTA cascade architecture and the Spatial-wavelet learnable Fusion Tuner (SwlFT) attention mechanism. It is designed to achieve highly accurate, low-latency, and real-time detection of tea anthracnose on UAV-based edge devices (e.g., NVIDIA Jetson Nano).
 
 🚀 Current Repository Status
 
@@ -30,7 +30,7 @@ The core source code for the SwlFT attention mechanism, DownWT (Haar wavelet dow
 
 Complete training, validation, and inference scripts.
 
-Python scripts for TensorRT engine serialization and edge device deployment (achieving 32.5 FPS on Jetson Nano).
+Python scripts for TensorRT engine serialization and edge device deployment .
 
 Thank you for your interest and patience! Please feel free to ⭐ Star this repository to stay updated.
 
@@ -38,7 +38,7 @@ Thank you for your interest and patience! Please feel free to ⭐ Star this repo
 
 📌 项目简介
 
-欢迎来到 SwlFT-YOLO 的官方代码仓库。本项目提出了一种专为边缘计算定制的新型目标检测器，它基于逆向的“先剪枝后微调（Pruning-then-Tuning）”级联架构以及 SwlFT（空间-小波可学习融合调优器）频域注意力机制。该模型旨在无人机搭载的边缘设备（如 NVIDIA Jetson Nano）上，实现对早期茶炭疽病的高精度、低延迟实时检测。
+欢迎来到 SwlFT-YOLO 的官方代码仓库。本项目提出了一种专为边缘计算定制的新型目标检测器，它基于逆向的FTA级联架构以及 SwlFT（空间-小波可学习融合调优器）频域注意力机制。该模型旨在无人机搭载的边缘设备上，实现对茶炭疽病的高精度、低延迟实时检测。
 
 🚀 仓库当前状态
 
@@ -60,6 +60,6 @@ Thank you for your interest and patience! Please feel free to ⭐ Star this repo
 
 完整的模型训练、验证和推理脚本。
 
-基于 TensorRT 的边缘端 C++/Python 部署优化代码（在 Jetson Nano 上实测帧率达 32.5 FPS）。
+基于 TensorRT 的边缘端 C++/Python 部署优化代码。
 
 感谢您的关注与耐心等待！欢迎点击右上角的 ⭐ Star 收藏本仓库以获取最新发布动态。
