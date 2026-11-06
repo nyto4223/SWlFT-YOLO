@@ -50,4 +50,4 @@ head:
   - [-1, 3, C2f_ScConv, [1024]] # 24 (P5/32-large)
   - [-1, 1, ResGatedParallel_LWN_ECA_Optimized, [0]] # 25
 
-  - [[13, 21, 25], 1, Detect, [nc]] # Detect(P3, P4, P5)
+  - [[17, 21, 25], 1, Detect, [nc]] # Detect(P3, P4, P5)
