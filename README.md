@@ -22,7 +22,7 @@ Training Logs & Curves: The training process visualizations, including loss conv
 
 ⏳ Future Updates (Coming Soon)
 
-To comply with double-blind peer-review policies and journal publishing guidelines, the complete source code will be released immediately after the paper is officially accepted and published. The upcoming release will include:
+To comply with journal publishing guidelines, the complete source code will be released immediately after the paper is officially accepted and published. The upcoming release will include:
 
 The complete YOLOv8-based model definition code with our custom structural modifications.
 
@@ -50,7 +50,7 @@ Thank you for your interest and patience! Please feel free to ⭐ Star this repo
 
 ⏳ 后续更新计划 (敬请期待)
 
-为了严格遵守学术期刊的双盲审稿原则及出版规定，我们将在论文正式录用并发表后，第一时间全面公开所有的模型细节与完整源代码。
+为了严格遵守学术期刊的审稿原则及出版规定，我们将在论文正式录用并发表后，第一时间全面公开所有的模型细节与完整源代码。
 
 即将开源的内容包括：
 
