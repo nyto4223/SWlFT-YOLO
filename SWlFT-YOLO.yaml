@@ -5,7 +5,7 @@
 # Task docs: https://docs.ultralytics.com/tasks/detect
 
 # Parameters
-nc: 4 # number of classes
+nc: 1 # number of classes
 scales: # model compound scaling constants, i.e. 'model=yolov8n.yaml' will call yolov8.yaml with scale 'n'
   # [depth, width, max_channels]
   n: [0.33, 0.25, 1024] # YOLOv8n summary: 225 layers,  3157200 parameters,  3157184 gradients,   8.9 GFLOPs
@@ -33,21 +33,21 @@ head:
   - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
   - [[-1, 6], 1, BiFPN_Concat2, [1]] # cat backbone P4
   - [-1, 3, C2f_ScConv, [512]] # 12
-  - [-1, 1, ResGatedParallel_LWN_ECA_Optimized, [0]] # 13
+  - [-1, 1, ResGatedParallel_LWN_ECA_Optimized, [0]] # 13 SwlFT, FtA after C2f (top-down P4)
 
   - [-1, 1, nn.Upsample, [None, 2, "nearest"]]
   - [[-1, 4], 1, BiFPN_Concat2, [1]] # cat backbone P3
   - [-1, 3, C2f_ScConv, [256]] # 16 (P3/8-small)
-  - [-1, 1, ResGatedParallel_LWN_ECA_Optimized, [0]]
+  - [-1, 1, ResGatedParallel_LWN_ECA_Optimized, [0]]  # 17 SwlFT, FtA after C2f (top-down P3)
 
   - [-1, 1, Conv, [256, 3, 2]]
   - [[-1, 6, 12], 1, BiFPN_Concat3, [1]] # cat head P4
   - [-1, 3, C2f_ScConv, [512]] # 20 (P4/16-medium)
-  - [-1, 1, ResGatedParallel_LWN_ECA_Optimized, [0]] # 21
+  - [-1, 1, ResGatedParallel_LWN_ECA_Optimized, [0]] # 21 SwlFT, FtA after C2f (bottom-up P4)
 
   - [-1, 1, Conv, [512, 3, 2]]
   - [[-1, 9], 1, BiFPN_Concat2, [1]] # cat head P5
   - [-1, 3, C2f_ScConv, [1024]] # 24 (P5/32-large)
-  - [-1, 1, ResGatedParallel_LWN_ECA_Optimized, [0]] # 25
+  - [-1, 1, ResGatedParallel_LWN_ECA_Optimized, [0]] # 25  SwlFT, FtA after C2f (bottom-up P5)
 
   - [[17, 21, 25], 1, Detect, [nc]] # Detect(P3, P4, P5)
