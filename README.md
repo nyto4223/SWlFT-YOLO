@@ -11,9 +11,9 @@ SwlFT-YOLO is a YOLOv8n-based detector for symptomatic tea leaves, built to run 
 - `SWlFT-YOLO.yaml`: model configuration (Ultralytics 8.3.68)
 - `module/`: DownWT, C2f_ScConv and BiFPN implementations
 - `Module Example/weights/`: trained weights (`best.pt`, `last.pt`)
-- `Module Example/`: training curves and validation previews; best testing mAP@50 = 0.758 
+- `Module Example/`: training curves and validation previews;
 
-Note: `best.pt` was trained with a single class. Parameter and FLOP counts in the paper are reported with the default 80-class head, following the official Ultralytics model cards. Run `best.pt` requires the SwlFT module, which will be released after acceptance.
+Note: `best.pt` was trained with a single class. Parameter and FLOP counts in the paper are reported with the default 80-class head, following the official Ultralytics model cards. Running `best.pt` requires the SwlFT module, which will be released after acceptance.
 
 
 ## Coming after acceptance
